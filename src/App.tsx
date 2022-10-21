@@ -13,7 +13,7 @@ import { SelectionScreen } from './components/SelectionScreen';
 import { Loading } from './components/Loading';
 import './App.css';
 
-export const appURL = '/trainBooking';
+export const appURL = '/trainTickets';
 export const serverURL = 'https://fe-diplom.herokuapp.com';
 
 function App() {

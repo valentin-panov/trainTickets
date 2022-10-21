@@ -1,9 +1,9 @@
 {
-  "name": "trainBooking",
+  "name": "traintickets",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "homepage": "https://valentin-panov.github.io/trainBooking/",
+  "homepage": "https://valentin-panov.github.io/trainTickets/",
   "sideEffects": [
     "**/*.scss"
   ],
