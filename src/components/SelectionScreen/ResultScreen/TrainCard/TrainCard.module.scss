@@ -1,0 +1,151 @@
+@import '../../../../styles/common';
+
+.root {
+  margin-top     : 50px;
+  display        : flex;
+  box-sizing     : border-box;
+  width          : 100%;
+  flex-direction : row;
+  background     : #FFFFFF;
+  border         : 1px solid #C4C4C4;
+  box-shadow     : 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.general {
+  display        : flex;
+  width          : 200px;
+  flex-direction : column;
+  flex-grow      : 0;
+  background     : #E4E0E9;
+  
+  .icon {
+    padding : 58px 68px 17px 43px;
+  }
+  
+  .general__txt {
+    padding     : 0 0 30px 25px;
+    font-size   : 16px;
+    line-height : 19px;
+    font-weight : normal;
+    font-style  : normal;
+    
+    color       : #292929;
+    
+    .textContainer {
+      display         : flex;
+      flex-direction  : row;
+      justify-content : flex-start;
+      align-items     : center;
+      align-content   : center;
+    }
+    
+    .trainId {
+      padding     : 0 48px 15px 0;
+      
+      font-size   : 24px;
+      line-height : 28px;
+      font-weight : bold;
+      font-style  : normal;
+      text-align  : center;
+      color       : #3E3C41;
+    }
+  }
+}
+
+.params {
+  display        : flex;
+  width          : 100%;
+  flex-direction : row;
+  flex-grow      : 1;
+  
+  .params__schedule {
+    padding   : 55px 40px;
+    min-width : 480px;
+    
+    .row {
+      margin-bottom   : 45px;
+      display         : flex;
+      flex-direction  : row;
+      flex-wrap       : nowrap;
+      justify-content : space-between;
+      align-items     : flex-start;
+      color           : #000000;
+      
+      .col1 {
+        min-width : 160px;
+        max-width : 160px;
+        flex-grow : 0;
+      }
+      
+      .col2 {
+        padding-right   : 40px;
+        display         : flex;
+        flex-direction  : column;
+        justify-content : flex-start;
+        align-items     : center;
+        flex-grow       : 1;
+      }
+      
+      .time {
+        font-size   : 24px;
+        line-height : 28px;
+        font-weight : bold;
+        font-style  : normal;
+      }
+      
+      .city {
+        margin-top     : 5px;
+        margin-bottom  : 5px;
+        font-size      : 18px;
+        line-height    : 21px;
+        font-weight    : 400;
+        font-style     : normal;
+        text-align     : left;
+        letter-spacing : 0;
+      }
+      
+      .station {
+        font-size      : 16px;
+        line-height    : 19px;
+        font-weight    : 400;
+        font-style     : normal;
+        text-align     : left;
+        letter-spacing : 0;
+        color          : #928F94;
+      }
+      
+      .duration {
+        font-size   : 18px;
+        line-height : 21px;
+        font-weight : normal;
+        font-style  : normal;
+        
+        color       : #C4C4C4;
+      }
+      
+      .arrow {
+      
+      }
+    }
+  }
+  
+  .seats {
+    min-width   : 280px;
+    border-left : 1px dashed #E5E5E5;;
+  }
+}
+
+.btn {
+  //width       : 22px;
+  //height      : 22px;
+  font-size   : 18px;
+  line-height : 21px;
+  font-weight : normal;
+  font-style  : normal;
+  
+  color       : #928F94;
+}
+
+.active {
+  color : #000000;
+}

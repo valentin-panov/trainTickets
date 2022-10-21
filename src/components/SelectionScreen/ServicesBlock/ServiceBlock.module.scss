@@ -1,0 +1,35 @@
+@import 'src/styles/common';
+
+.root {
+  display        : flex;
+  flex-direction : row;
+  flex-grow      : 1;
+  
+  .service__icon {
+    width  : 20px;
+    height : 20px;
+    //color  : rgba(229, 229, 229, 1);
+    
+    &:not(:last-child) {
+      margin-right : 16px;
+    }
+  }
+  
+}
+
+.active {
+  color : #292929;
+}
+
+.lastTickets {
+  justify-content : flex-start;
+  color           : #E5E5E5;
+}
+
+.ticketCard {
+  margin-bottom   : 20px;
+  width           : 100%;
+  justify-content : flex-end;
+  align-items     : flex-end;
+  color           : #C4C4C4;
+}

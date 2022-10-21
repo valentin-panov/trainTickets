@@ -1,0 +1,19 @@
+/*ANT CAROUSEL MODIFICATION*/
+
+.ant-carousel .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  background: #e5e5e5;
+  border-radius: 100%;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  width: 20px;
+  height: 20px;
+  background: #c4c4c4;
+  border-radius: 100%;
+}
+
+.ant-carousel .slick-dots-bottom {
+  bottom: -70px;
+}

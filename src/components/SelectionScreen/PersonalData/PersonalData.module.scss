@@ -1,0 +1,147 @@
+@import 'src/styles/common';
+
+.root {
+  display         : flex;
+  width           : 100%;
+  flex-direction  : column;
+  justify-content : flex-start;
+  align-items     : center;
+  gap             : 115px;
+}
+
+.card {
+  box-sizing : border-box;
+  width      : 958px;
+  font-size  : 18px;
+  background : #FFFFFF;
+  border     : 1px solid #C4C4C4;
+  box-shadow : 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+  &_padding {
+    padding : 20px 35px;
+    
+    &:first-child {
+      padding : 30px 35px 30px;
+    }
+    
+    &:last-child {
+      padding : 15px 35px 30px;
+    }
+    
+  }
+  
+  &_subheading {
+    display         : flex;
+    width           : 100%;
+    height          : 107px;
+    flex-direction  : row;
+    justify-content : flex-start;
+    align-items     : center;
+    font-size       : 30px;
+    line-height     : 35px;
+    font-weight     : 400;
+    font-style      : normal;
+    color           : #292929;
+    background      : #F9F9F9;
+    
+    &:not(:last-child) {
+      border-bottom : 1px dashed #928F94;
+    }
+    
+    &:not(:first-child) {
+      border-top : 1px dashed #928F94;
+    }
+    
+  }
+  
+  &_personal {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : flex-start;
+  }
+  
+}
+
+.onlinePayments {
+  padding-top     : 30px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  
+  align-items     : center;
+  font-size       : 24px;
+  line-height     : 28px;
+  font-weight     : 700;
+  font-style      : normal;
+  color           : #292929;
+  gap             : 15px;
+}
+
+.bottom_dash {
+  width         : 100%;
+  border-bottom : 1px dashed #928F94;
+  
+}
+
+.btn {
+  box-sizing     : border-box;
+  width          : 305px;
+  height         : 60px;
+  font-size      : 24px;
+  line-height    : 28px;
+  font-weight    : 700;
+  font-style     : normal;
+  text-align     : center;
+  text-transform : uppercase;
+  color          : #FFFFFF;
+  background     : #FFA800;
+  border         : 0;
+  border-radius  : 5px;
+  align-self     : flex-end;
+  
+  &:hover, &:focus {
+    color         : #FFFFFF;
+    background    : #FFA800;
+    
+    border        : 0;
+    border-radius : 5px;;
+    filter        : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  &:active {
+    color            : #292929;
+    background-color : #FFA800;
+    border           : 1px solid #FFA800;
+    
+  }
+  
+  &:disabled {
+    color            : #FFFFFF;
+    background-color : #928F94;
+    border           : #928F94;
+    
+    &:hover {
+      color            : #FFFFFF;
+      background-color : #928F94;
+      border           : #928F94;
+      filter           : none;
+    }
+  }
+}
+
+.inputField {
+  box-sizing    : border-box;
+  width         : 280px;
+  height        : 50px;
+  font-size     : 18px;
+  background    : #FFFFFF;
+  border        : 1px solid #928F94;
+  border-radius : 5px;
+  
+  & * {
+    font-size : 18px;
+  }
+}

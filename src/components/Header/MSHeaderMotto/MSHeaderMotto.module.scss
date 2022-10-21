@@ -1,0 +1,16 @@
+@import 'src/styles/common';
+
+.root {
+  margin         : 0;
+  display        : flex;
+  flex-direction : column;
+  font-size      : 72px;
+  line-height    : 84.38px;
+  font-weight    : 200;
+  font-style     : normal;
+  color          : $white;
+}
+
+.secondLine {
+  font-weight: 700;
+}

@@ -1,0 +1,21 @@
+@import '../../../../styles/common';
+
+.root {
+  display        : flex;
+  flex-direction : row;
+}
+
+.btn {
+  //width       : 22px;
+  //height      : 22px;
+  font-size   : 18px;
+  line-height : 21px;
+  font-weight : normal;
+  font-style  : normal;
+  
+  color       : #928F94;
+}
+
+.active {
+  color : #000000;
+}

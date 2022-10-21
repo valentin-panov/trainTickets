@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+@import '~antd/dist/antd.css';
+#root {
+  margin: 0 auto;
+  min-height: 100%;
+  font: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #727e86;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear 2s;
+  /* the last value defines transition-delay */
+}
+
+.shadow {
+  -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.carriageTypeIcon {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #C4C4C4;
+  background: transparent;
+  border: 0;
+}
+.carriageTypeIcon:hover {
+  color: #FFA800;
+  border: 1px solid #FFA800;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.carriageTypeIcon:disabled {
+  color: #C4C4C4;
+  border: 0;
+  cursor: not-allowed;
+}
+.carriageTypeIcon .carriageTypeSubtitle {
+  margin-top: 25px;
+}
+
+.active {
+  color: #FFA800;
+}
+
+/*# sourceMappingURL=CarraigeTypeButton.module.css.map */

@@ -1,0 +1,101 @@
+@import 'src/styles/common';
+
+.root {
+  position : relative;
+  z-index  : 2;
+}
+
+.title {
+  padding-left : 7px;
+  font-size    : 30px;
+  line-height  : 35px;
+  font-weight  : 300;
+  color        : $white;
+}
+
+.input_holder {
+  margin-top      : 14px;
+  //margin-bottom   : 60px;
+  display         : flex;
+  min-width       : 687px;
+  max-width       : 687px;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center;
+}
+
+.inputItem {
+  box-sizing    : border-box;
+  font-size     : 18px;
+  line-height   : 21px;
+  color         : #292929;
+  background    : #FFFFFF;
+  border-radius : 3px;
+}
+
+.headerPicker {
+  padding   : 6px 18px;
+  min-width : 320px;
+  height    : 60px;
+  
+  &:not(:last-child) {
+    margin-right : 35px;
+  }
+}
+
+.asidePicker {
+  margin-bottom : 30px;
+  padding       : 10px 18px 10px 8px;
+  min-width     : 295px;
+  height        : 43px;
+}
+
+.dropDown {
+  
+  &::before, &::after {
+    position      : absolute;
+    top           : -30px;
+    left          : calc(50% - 15px);
+    content       : '';
+    border        : 15px solid transparent;
+    border-bottom : 15px solid lightgrey;
+    @media not all and (min-resolution : .001dpcm) {
+      @supports (-webkit-appearance: none) {
+        /* Safari Only CSS here */
+        top : -29px
+      }
+    }
+  }
+  
+  &::after {
+    position      : absolute;
+    top           : -28px;
+    left          : calc(50% - 14px);
+    content       : '';
+    border        : 14px solid transparent;
+    border-bottom : 14px solid white;
+    @media not all and (min-resolution : .001dpcm) {
+      @supports (-webkit-appearance: none) {
+        /* Safari Only CSS here */
+        top : -27px
+      }
+    }
+  }
+}
+
+.datePicker {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  
+}
+
+.sideSelection__title {
+  padding-bottom : 10px;
+  font-size      : 30px;
+  line-height    : 35px;
+  font-weight    : normal;
+  color          : #FFFFFF;
+  align-self     : flex-start;
+}

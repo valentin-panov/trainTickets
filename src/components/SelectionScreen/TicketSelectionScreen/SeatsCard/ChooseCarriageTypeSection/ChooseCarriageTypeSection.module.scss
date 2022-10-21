@@ -1,0 +1,17 @@
+@import 'src/styles/common';
+
+.carriageTypeTitle {
+  padding     : 25px 20px;
+  font-size   : 30px;
+  line-height : 35px;
+  font-weight : bold;
+  font-style  : normal;
+  color       : #292929;
+}
+
+.carriageTypeIcons {
+  display               : grid;
+  min-height            : 170px;
+  grid-template-columns : 1fr 1fr 1fr 1fr;
+  
+}

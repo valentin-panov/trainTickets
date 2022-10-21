@@ -1,0 +1,269 @@
+@import 'src/styles/common';
+
+.root {
+  display         : flex;
+  box-sizing      : border-box;
+  min-width       : 960px;
+  max-width       : 960px;
+  flex-direction  : column;
+  justify-content : flex-start;
+  
+  background      : #FFFFFF;
+  border          : 1px solid #C4C4C4;
+  box-shadow      : 0 2px 2px rgba(0, 0, 0, 0.25);
+  
+  .header {
+    padding        : 35px 20px;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    
+  }
+}
+
+.btnHeader {
+  margin-left   : 10px;
+  box-sizing    : border-box;
+  width         : 325px;
+  height        : 60px;
+  font-size     : 24px;
+  line-height   : 28px;
+  font-weight   : bold;
+  
+  font-style    : normal;
+  text-align    : center;
+  color         : #292929;
+  background    : #FFFFFF;
+  border        : 1px solid #292929;
+  
+  border-radius : 5px;
+  
+  &:hover {
+    color  : #FFA800;
+    filter : drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  &:active, &:focus {
+    box-sizing    : border-box;
+    color         : #292929;
+    background    : #FFA800;
+    border        : 1px solid #FFA800;
+    border-radius : 5px;
+  }
+}
+
+.divider {
+  min-height    : 50px;
+  border-bottom : 1px dashed #C4C4C4;
+}
+
+.carriageTypeTitle {
+  padding     : 25px 20px;
+  font-size   : 30px;
+  line-height : 35px;
+  font-weight : bold;
+  font-style  : normal;
+  color       : #292929;
+}
+
+.carriageTypeIcons {
+  display               : grid;
+  min-height            : 170px;
+  grid-template-columns : 1fr 1fr 1fr 1fr;
+  
+}
+
+.carriageList {
+  padding         : 5px 30px 5px;
+  display         : flex;
+  height          : 37px;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : baseline;
+  background      : #FFD98F;
+  
+  .carriages {
+    flex-grow   : 0;
+    font-size   : 16px;
+    line-height : 19px;
+    font-weight : 400;
+    font-style  : normal;
+    color       : #292929;
+    
+    &:last-child {
+      align-self : center;
+    }
+  }
+  
+  .carriagesNumbers {
+    padding     : 0 10px;
+    flex-grow   : 1;
+    font-size   : 24px;
+    line-height : 28px;
+    font-weight : 700;
+    font-style  : normal;
+    color       : #2D2B2F;
+  }
+}
+
+.selectedCarriage {
+  display        : flex;
+  height         : 160px;
+  min-height     : 160px;
+  flex-direction : row;
+  
+  .selectedCarriageNumber {
+    display         : flex;
+    width           : 190px;
+    height          : 100%;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    color           : #292929;
+    background      : #FFD98F;
+    
+    .number {
+      font-size   : 72px;
+      line-height : 84px;
+      font-weight : bold;
+      font-style  : normal;
+    }
+    
+    .subNumber {
+      font-size   : 24px;
+      line-height : 28px;
+      font-weight : normal;
+      font-style  : normal;
+    }
+  }
+  
+  .selectedCarriageInfoBox {
+    flex-grow : 1;
+  }
+  
+  .selectedCarriageInfo {
+    padding-top           : 35px;
+    padding-left          : 85px;
+    display               : grid;
+    grid-template-columns : 2fr 1fr;
+    
+    & .sciBlock {
+      display         : flex;
+      flex-direction  : column;
+      justify-content : flex-start;
+      align-items     : flex-start;
+      font-size       : 18px;
+      line-height     : 21px;
+      font-weight     : normal;
+      font-style      : normal;
+      
+      color           : #928F94;
+      
+      .seatsPrice {
+        display               : grid;
+        width                 : 100%;
+        grid-template-columns : 1fr 1fr;
+      }
+      
+      .seatsCount {
+        color : #292929;
+      }
+      
+      .seatsType {
+        padding-top : 20px;
+        font-size   : 24px;
+        line-height : 28px;
+        font-weight : 400;
+        
+        font-style  : normal;
+        color       : #000000;
+        
+        .seatsTypeNumber {
+          margin-left : 10px;
+          font-weight : 700;
+          
+        }
+      }
+      
+      .price {
+        margin-top      : 20px;
+        display         : flex;
+        flex-direction  : row;
+        justify-content : flex-start;
+        font-size       : 24px;
+        line-height     : 28px;
+        font-weight     : bold;
+        font-style      : normal;
+        
+        color           : #000000;
+      }
+      
+      .rub {
+        margin-left : 10px;
+        width       : 14px;
+        height      : 17px;
+        color       : #928F94;
+      }
+      
+    }
+  }
+  
+}
+
+.preSchemeDivider {
+  display         : flex;
+  height          : 70px;
+  justify-content : flex-end;
+  
+  .preSchemeDividerTooltip {
+    margin-right    : 40px;
+    padding         : 15px;
+    
+    display         : flex;
+    width           : 200px;
+    justify-content : center;
+    align-items     : center;
+    font-size       : 16px;
+    line-height     : 19px;
+    
+    font-weight     : normal;
+    font-style      : normal;
+    color           : #292929;
+    background      : #F3F3F3;
+    
+    border-radius   : 5px;
+  }
+}
+
+.carriageScheme {
+  margin-bottom   : 12px;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
+
+.totalPrice {
+  padding         : 12px;
+  display         : flex;
+  justify-content : flex-end;
+  align-items     : center;
+  
+  .totalPriceNumbers {
+    font-size   : 24px;
+    line-height : 28px;
+    font-weight : bold;
+    font-style  : normal;
+    
+    color       : #FFA800;
+    
+  }
+  
+  .totalPriceSymbol {
+    margin-top   : -4px;
+    margin-right : 24px;
+    margin-left  : 15px;
+    width        : 14px;
+    height       : 17px;
+    color        : #928F94;
+  }
+}

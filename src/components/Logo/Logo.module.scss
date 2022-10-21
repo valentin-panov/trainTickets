@@ -1,0 +1,15 @@
+@import 'src/styles/common';
+
+.root {
+  margin      : 0;
+  padding     : 0;
+  font-size   : 36px;
+  line-height : 42px;
+  font-weight : 900;
+  font-style  : normal;
+  color       : $logo-color;
+  
+  &:hover {
+    color : #FFA800;}
+    
+  }

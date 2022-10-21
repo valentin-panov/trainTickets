@@ -1,0 +1,234 @@
+@import 'src/styles/common';
+
+.root {
+  margin         : 0;
+  padding        : 0;
+  display        : flex;
+  box-sizing     : border-box;
+  min-width      : 100%;
+  min-height     : 519px;
+  flex-direction : column;
+  color          : #ffffff;
+  background     : $footer-bg;
+}
+
+.top {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-evenly;
+  align-items     : flex-start;
+}
+
+.topSection {
+  display        : flex;
+  flex-direction : column;
+}
+
+.subscriptionForm {
+  display        : flex;
+  flex-direction : row;
+}
+
+.emailInput {
+  margin-right  : 30px;
+  padding       : 10px 20px;
+  box-sizing    : border-box;
+  width         : 447px;
+  height        : 60px;
+  font-size     : 24px;
+  line-height   : 28px;
+  background    : #ffffff;
+  border        : 0;
+  border-radius : 3px;
+  
+  &::placeholder {
+    color : #e5e5e5;
+  }
+}
+
+.btn {
+  box-sizing       : border-box;
+  width            : 170px;
+  height           : 60px;
+  font-size        : 24px;
+  line-height      : 28px;
+  text-transform   : uppercase;
+  color            : #e5e5e5;
+  background-color : transparent;
+  border           : 1px solid #ffffff;
+  border-radius    : 3px;
+  
+  &:hover, &:focus {
+    color            : #2D2B2F;
+    background-color : #FFCA62;
+    border           : #FFCA62;
+  }
+  
+  &:active {
+    color            : #2D2B2F;
+    background-color : #FFFFFF;
+    border           : #FFFFFF;
+    
+  }
+  
+  &:disabled {
+    color            : #FFFFFF;
+    background-color : #928F94;
+    border           : #928F94;
+    
+    &:hover {
+      color            : #FFFFFF;
+      background-color : #928F94;
+      border           : #928F94;
+    }
+  }
+}
+
+.connectBlockContainer {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-start;
+  
+  & svg {
+    color : #E5E5E5;
+  }
+}
+
+.socials__imageContainer {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  
+  & svg:not(:last-child) {
+    margin-right : 50px;
+  }
+  
+  & svg:hover {
+    color  : #FFA800;
+    cursor : pointer;
+  }
+}
+
+.bottom {
+  padding         : 0 255px;
+  display         : flex;
+  box-sizing      : border-box;
+  height          : 100px;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center;
+  border-top      : solid 1px $footer-border;
+  
+  & svg {
+    color : #E5E5E5;
+  }
+  
+  & svg:hover {
+    color  : #FFA800;
+    cursor : pointer;
+  }
+  
+  .date {
+    font-size   : 24px;
+    line-height : 28px;
+    font-weight : 300;
+    color       : #e5e5e5;
+  }
+  
+  .upBtn {
+    position         : relative;
+    padding          : 0;
+    width            : 36px;
+    height           : 36px;
+    background-color : transparent;
+    border           : 0;
+    cursor           : pointer;
+    
+    & img {
+      position   : absolute;
+      top        : 0;
+      left       : 0;
+      width      : 100%;
+      height     : 100%;
+      object-fit : cover;
+    }
+  }
+}
+
+.subscModalWrapper {
+  display         : flex;
+  height          : 100%;
+  flex-direction  : column;
+  justify-content : space-between;
+  align-items     : center;
+  
+  .modalHeader {
+    padding         : 0 40px;
+    display         : flex;
+    width           : 100%;
+    height          : 100px;
+    justify-content : flex-start;
+    align-items     : center;
+    flex-grow       : 0;
+    background      : rgba(255, 245, 0, 0.36);
+    border-bottom   : 1px dashed #928F94;
+  }
+  
+  .modalBody {
+    padding     : 35px 45px 25px;
+    width       : 100%;
+    flex-grow   : 1;
+    font-size   : 18px;
+    line-height : 21px;
+    font-weight : normal;
+    
+    font-style  : normal;
+    color       : #000000;
+    
+    & p {
+      margin  : 0;
+      padding : 0;
+      
+      &:not(:last-child) {
+        margin-bottom : 20px;
+      }
+    }
+  }
+  
+  .modalBtn {
+    box-sizing     : border-box;
+    width          : 233px;
+    height         : 52px;
+    font-size      : 24px;
+    line-height    : 28px;
+    font-weight    : bold;
+    font-style     : normal;
+    text-align     : center;
+    text-transform : uppercase;
+    color          : #292929;
+    border         : 1px solid #292929;
+    border-radius  : 5px;
+    
+    &:hover {
+      color      : #FFA800;
+      box-shadow : 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    &:active {
+      color      : #292929;
+      background : #FFA800;
+      border     : 1px solid #FFA800;
+      box-shadow : 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  .modalFooter {
+    display         : flex;
+    width           : 100%;
+    height          : 100px;
+    justify-content : center;
+    align-items     : center;
+    flex-grow       : 0;
+    border-top      : 1px dashed #928F94;
+  }
+}

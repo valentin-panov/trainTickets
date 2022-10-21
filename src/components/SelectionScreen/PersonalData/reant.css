@@ -1,0 +1,20 @@
+.payments {
+  margin-top: 20px;
+}
+
+.payments span.ant-radio + * {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #928f94;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.payments .ant-radio {
+  top: 0;
+}

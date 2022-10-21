@@ -1,0 +1,198 @@
+@import 'src/styles/common';
+
+.root {
+  position   : relative;
+  padding    : $paddings;
+  display    : flex;
+  min-width  : 100%;
+  min-height : 1100px;
+}
+
+.container {
+  //position       : absolute;
+  //top            : -175px;
+  position       : relative;
+  z-index        : 5;
+  margin-top     : -200px;
+  display        : flex;
+  box-sizing     : border-box;
+  min-width      : 100%;
+  height         : 1100px;
+  flex-direction : column;
+  background     : #FFFFFF;
+  border         : 1px solid #C4C4C4;
+  box-shadow     : 0 2px 2px rgba(0, 0, 0, 0.25);
+  
+  .header {
+    padding          : 50px 80px;
+    display          : flex;
+    min-width        : 100%;
+    min-height       : 150px;
+    flex-direction   : row;
+    justify-content  : space-between;
+    align-items      : center;
+    color            : #3E3C41;
+    background-color : #FFFFFF;
+    
+    .header__order {
+      display         : flex;
+      flex-direction  : row;
+      justify-content : space-between;
+      
+      align-items     : center;
+      font-size       : 36px;
+      line-height     : 42px;
+      font-weight     : bold;
+      color           : #3E3C41;
+    }
+    
+    .header__price {
+      display        : flex;
+      flex-direction : row;
+      align-items    : center;
+      
+      font-size      : 36px;
+      line-height    : 42px;
+      font-weight    : normal;
+      color          : #928F94;
+      gap            : 7px;
+      
+      .price {
+        font-size   : 36px;
+        line-height : 42px;
+        font-weight : bold;
+        
+        color       : #3E3C41;
+      }
+      
+      .currency {
+        margin-bottom : 14px;
+        width         : 21px;
+        height        : 27px;
+        
+        color         : #928F94;
+      }
+    }
+  }
+  
+  .icons {
+    padding-top     : 40px;
+    display         : flex;
+    min-height      : 310px;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : flex-start;
+    background      : #F4F3F6;
+    
+    .icons__item {
+      display         : flex;
+      box-sizing      : border-box;
+      width           : 180px;
+      flex-direction  : column;
+      justify-content : center;
+      align-items     : center;
+      
+      &:not(:last-child) {
+        margin-right : 120px;
+      }
+      
+      .iconsItem__txt {
+        font-size   : 18px;
+        line-height : 21px;
+        font-weight : 400;
+        text-align  : center;
+        
+        .iconsItem__txt_bold {
+          font-weight : 500;
+          
+        }
+        
+      }
+    }
+  }
+  
+  .msg {
+    padding    : 100px 200px;
+    min-height : 490px;
+    color      : #292929;
+    
+    .msg__title {
+      margin-bottom : 50px;
+      font-size     : 36px;
+      line-height   : 42px;
+      font-weight   : bold;
+    }
+    
+    .msg__stub {
+      margin-bottom : 75px;
+      font-size     : 24px;
+      line-height   : 28px;
+      font-weight   : normal;
+    }
+    
+    .msg__connect {
+      font-size   : 24px;
+      line-height : 28px;
+      font-weight : bold;
+    }
+    
+  }
+  
+  .footer {
+    padding         : 50px 80px;
+    display         : flex;
+    min-height      : 150px;;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+    background      : rgba(255, 168, 0, 0.88);
+    
+    .rate {
+      display         : flex;
+      flex-direction  : row;
+      justify-content : space-between;
+      align-items     : center;
+      
+      .rate__msg {
+        margin-right : 50px;
+        font-size    : 24px;
+        line-height  : 28px;
+        
+        font-weight  : normal;
+        color        : #292929;
+      }
+      
+      .rate__star {
+        margin-right : 20px;
+      }
+    }
+    
+    .success__return_btn {
+      width          : 323px;
+      height         : 60px;
+      font-size      : 24px;
+      line-height    : 28px;
+      font-weight    : bold;
+      
+      text-align     : center;
+      text-transform : uppercase;
+      color          : #292929;
+      background     : transparent;
+      border         : 1px solid #3E3C41;
+      border-radius  : 5px;
+      
+      &:hover, &:focus {
+        color      : #FFA800;
+        background : #FFFFFF;
+        box-shadow : 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      
+      &:active {
+        color      : #292929;
+        background : #FFA800;
+        border     : 1px transparent solid;
+        filter     : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+  }
+}

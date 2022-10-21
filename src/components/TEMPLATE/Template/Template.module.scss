@@ -1,0 +1,10 @@
+@import 'src/styles/common';
+
+.root {
+  background: $logo-bg;
+  background-repeat: no-repeat;
+  background-size: 200px 100%;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}

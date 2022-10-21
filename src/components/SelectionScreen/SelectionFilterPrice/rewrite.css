@@ -1,0 +1,88 @@
+.ant-slider-handle {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 4px;
+  left: -5px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: unset;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.6s, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.ant-slider-rail {
+  position: absolute;
+  width: 100%;
+  height: 19px;
+  background-color: #3e3c41;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.ant-slider-track {
+  position: absolute;
+  height: 19px;
+  background-color: #ffa800;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.ant-slider:hover .ant-slider-track {
+  background-color: #fdb935;
+}
+
+.ant-slider:hover .ant-slider-rail {
+  background-color: #3e3c41;
+}
+
+.ant-tooltip {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 250px;
+  visibility: visible;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #e5e5e5;
+}
+
+.ant-tooltip-inner {
+  min-width: 30px;
+  min-height: 32px;
+  padding: 6px 8px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  word-wrap: break-word;
+  background-color: transparent;
+  border: 0;
+  box-shadow: unset;
+}
+
+.ant-tooltip-placement-bottom,
+.ant-tooltip-placement-bottomLeft,
+.ant-tooltip-placement-bottomRight {
+  padding-top: 0;
+}
+
+.ant-tooltip-placement-bottom .ant-tooltip-arrow,
+.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
+.ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+  display: none;
+}

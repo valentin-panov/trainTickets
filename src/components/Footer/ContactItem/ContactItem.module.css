@@ -1,0 +1,36 @@
+.root {
+  margin-bottom: 30px;
+  display: flex;
+  box-sizing: border-box;
+  max-width: 420px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.icon__container {
+  position: relative;
+  margin-right: 36px;
+  padding: 3px;
+  display: flex;
+  min-width: 30px;
+  min-height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.text__container .connection__text {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: normal;
+  white-space: pre-line;
+  color: #e5e5e5;
+}
+
+/*# sourceMappingURL=ContactItem.module.css.map */

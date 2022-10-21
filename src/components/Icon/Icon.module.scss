@@ -1,0 +1,14 @@
+.root {
+  display : inline-flex;
+  
+  svg {
+    width  : 32px;
+    height : 32px;
+  }
+  
+  .skeleton {
+    width         : 32px;
+    height        : 32px;
+    border-radius : 5px;
+  }
+}

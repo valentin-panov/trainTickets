@@ -1,0 +1,72 @@
+@import 'src/styles/common';
+
+.root {
+  padding               : 45px 10px 30px 0;
+  display               : grid;
+  width                 : 100%;
+  border-bottom         : 1px dashed #928F94;
+  grid-template-rows    : 1fr 1fr 1fr 1fr;
+  grid-template-columns : 160px 1fr;
+  grid-gap              : 15px;
+  grid-template-areas   :
+          'iconArea person'
+          'iconArea gender'
+          'iconArea birthdate'
+          'iconArea docData';
+}
+
+.iconArea {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  grid-area       : iconArea;
+  justify-self    : center;
+  align-self      : flex-start;
+  
+  &_icon {
+    margin-bottom : 20px;
+    width         : 68px;
+    height        : 68px;
+  }
+  
+  &_text {
+  
+  }
+}
+
+.person {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : center;
+  gap             : 10px;
+  grid-area       : person;
+}
+
+.gender {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : center;
+  grid-area       : gender;
+  gap             : 10px;
+}
+
+.birthdate {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : center;
+  gap             : 10px;
+  grid-area       : birthdate;
+}
+
+.docData {
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-start;
+  align-items     : center;
+  gap             : 10px;
+  grid-area       : docData;
+}

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+@import '~antd/dist/antd.css';
+#root {
+  margin: 0 auto;
+  min-height: 100%;
+  font: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #727e86;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear 2s;
+  /* the last value defines transition-delay */
+}
+
+.shadow {
+  -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.root {
+  display: flex;
+  min-width: 960px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header {
+  margin-top: -5px;
+  display: flex;
+  min-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: #928F94;
+}
+.header div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.trainList {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.pagination {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.pricePickerLabels {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pricePickerLabels span {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+.pricePickerLabels span:first-child {
+  margin-left: 5px;
+}
+.pricePickerLabels span:last-child {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=ResultScreen.module.css.map */

@@ -1,0 +1,47 @@
+@import 'src/styles/common';
+
+.root {
+  padding         : 0;
+  display         : flex;
+  width           : 100%;
+  flex-direction  : row;
+  justify-content : center;
+  align-items     : baseline;
+  
+  .title {
+    flex-grow      : 1;
+    font-size      : 30px;
+    line-height    : 35px;
+    font-weight    : 700;
+    font-style     : normal;
+    text-transform : uppercase;
+    color          : #FFFFFF;
+  }
+  
+  .amount {
+    font-size   : 48px;
+    line-height : 56px;
+    font-weight : 700;
+    font-style  : normal;
+    
+    color       : #FFA800;
+  }
+  
+  .currency {
+    margin-bottom : 4px;
+    margin-left   : 10px;
+    width         : 26px;
+    height        : 32px;
+    color         : #E5E5E5;
+  }
+  
+  //.mainRow {
+  //  padding         : $paddings;
+  //  padding-top     : 95px;
+  //  padding-bottom  : 190px;
+  //  display         : flex;
+  //  min-width       : 100%;
+  //  flex-direction  : row;
+  //  justify-content : stretch;
+  //}
+}

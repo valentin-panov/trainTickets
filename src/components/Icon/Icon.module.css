@@ -1,0 +1,14 @@
+.root {
+  display: inline-flex;
+}
+.root svg {
+  width: 32px;
+  height: 32px;
+}
+.root .skeleton {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=Icon.module.css.map */

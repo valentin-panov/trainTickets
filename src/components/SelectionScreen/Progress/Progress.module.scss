@@ -1,0 +1,109 @@
+@import '../../../styles/common';
+
+.root {
+  //position        : absolute;
+  //bottom          : -100px;
+  //left            : 0;
+  //padding         : 0;
+  display         : flex;
+  min-width       : 100%;
+  
+  height          : 100px;
+  flex-direction  : row;
+  flex-wrap       : nowrap;
+  justify-content : stretch;
+  align-items     : center;
+  background      : #3E3C41;
+  
+}
+
+.progress__item {
+  position       : relative;
+  display        : flex;
+  box-sizing     : border-box;
+  flex-direction : row;
+  align-items    : center;
+  flex-shrink    : 0;
+  flex-grow      : 0;
+  border         : 0;
+  border-right   : 1px #FFFFFF solid;
+  
+  &_button {
+    background-color : transparent;
+    border           : 0;
+    cursor           : pointer;
+    
+    &:disabled {
+      cursor           : not-allowed;
+    }
+  }
+  
+  &:first-child {
+    justify-content : flex-end;
+    flex-grow       : 1;
+  }
+  
+  &:last-child {
+    justify-content : flex-start;
+    flex-grow       : 1;
+    border-right    : 0;
+  }
+  
+  &:not(:last-child):before {
+    position      : absolute;
+    z-index       : 2;
+    top           : 0;
+    right         : -36px;
+    width         : 0;
+    height        : 0;
+    content       : '';
+    border-top    : 50px solid transparent;
+    border-left   : 35px solid #FFFFFF;
+    border-bottom : 50px solid transparent;
+  }
+  
+  &:not(:last-child):after {
+    position      : absolute;
+    z-index       : 3;
+    top           : 0;
+    right         : -35px;
+    width         : 0;
+    height        : 0;
+    content       : '';
+    border-top    : 50px solid transparent;
+    border-left   : 35px solid #3E3C41;
+    border-bottom : 50px solid transparent;
+  }
+  
+}
+
+.progress__item_active {
+  background : #FFA800;
+  
+  &:not(:last-child):after {
+    
+    content     : '';
+    border-left : 35px solid #FFA800;
+  }
+}
+
+.container {
+  position        : relative;
+  padding         : 22px 35px 22px 70px;
+  display         : flex;
+  box-sizing      : border-box;
+  min-width       : 360px;
+  height          : 100px;
+  justify-content : center;
+  align-items     : center;
+  border          : 0;
+  
+  & span {
+    margin-left : 25px;
+    font-size   : 30px;
+    line-height : 35px;
+    
+    font-weight : bold;
+    color       : #FFFFFF;
+  }
+}

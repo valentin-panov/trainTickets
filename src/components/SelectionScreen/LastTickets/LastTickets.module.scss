@@ -1,0 +1,80 @@
+@import 'src/styles/common';
+
+.root {
+  margin          : 90px 90px 0 0;
+  display         : flex;
+  //min-width       : 100%;
+  flex-direction  : column;
+  justify-content : space-between;
+}
+
+.lastTicketsTitle {
+  margin-bottom  : 30px;
+  font-size      : 30px;
+  line-height    : 35px;
+  font-weight    : 500;
+  text-transform : uppercase;
+  color          : #000000;
+}
+
+.sideSelection {
+  padding         : 45px 28px 35px;
+  display         : flex;
+  width           : 360px;
+  flex-direction  : column;
+  justify-content : flex-start;
+  align-items     : center;
+  background      : #3E3C41;
+  
+  .datePicker {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    
+  }
+}
+
+.sideSelection__title {
+  padding-bottom : 10px;
+  font-size      : 30px;
+  line-height    : 35px;
+  font-weight    : normal;
+  color          : #FFFFFF;
+  align-self     : flex-start;
+}
+
+.divider {
+  margin-top       : 30px;
+  margin-bottom    : 30px;
+  width            : 360px;
+  min-height       : 1px;
+  max-height       : 1px;
+  background-color : #E5E5E5;
+}
+
+.filterList {
+  width : 100%;
+}
+
+.pricePickerLabels {
+  display         : flex;
+  width           : 100%;
+  flex-direction  : row;
+  justify-content : space-between;
+  
+  span {
+    font-size   : 18px;
+    line-height : 21px;
+    font-weight : normal;
+    color       : #FFFFFF;
+    
+    &:first-child {
+      margin-left : 5px;
+    }
+    
+    &:last-child {
+      margin-right : 5px;
+    }
+  }
+}

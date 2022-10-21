@@ -1,0 +1,69 @@
+@import 'src/styles/common';
+
+.root {
+  position : relative;
+  z-index  : 2;
+  width    : 100%;
+}
+
+.title {
+  padding-left : 7px;
+  font-size    : 30px;
+  line-height  : 35px;
+  font-weight  : 300;
+  color        : $white;
+}
+
+.input_holder {
+  margin-top      : 14px;
+  //margin-bottom   : 60px;
+  display         : flex;
+  //min-width       : 100%;
+  min-width       : 687px;
+  max-width       : 687px;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center;
+}
+
+.autocomplete {
+  padding       : 6px 18px;
+  box-sizing    : border-box;
+  min-width     : 325px;
+  height        : 60px;
+  font-size     : 18px;
+  line-height   : 21px;
+  background    : #FFFFFF;
+  border-radius : 3px;
+}
+
+.destinationDropdown {
+  font-size    : 18px;
+  line-height  : 21px;
+  font-weight  : normal;
+  font-style   : normal;
+  font-variant : small-caps;
+  color        : #292929;
+}
+
+.geoIcon {
+  position         : relative;
+  display          : flex;
+  width            : 30px;
+  min-height       : 30px;
+  justify-content  : center;
+  align-items      : center;
+  color            : #E5E5E5;
+  background-color : transparent;
+  border           : 0;
+  cursor           : pointer;
+  
+  &:hover, &:focus {
+    background-color : transparent;
+  }
+}
+
+.swapBtn {
+  padding : 1px;
+  color   : #E5E5E5;
+}

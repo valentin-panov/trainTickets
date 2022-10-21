@@ -1,0 +1,40 @@
+@import 'src/styles/common';
+
+.root {
+  padding    : 80px 250px 130px;
+  min-width  : 100%;
+  min-height : 550px;
+  background : $white;
+}
+
+.title {
+  font-size      : 36px;
+  line-height    : 42px;
+  font-weight    : 500;
+  text-transform : uppercase;
+  
+  color          : #292929;
+}
+
+.textBlock {
+  margin-top     : 30px;
+  display        : flex;
+  flex-direction : column;
+  border-left    : solid 9px rgba(255, 168, 0, 1);
+  
+  & span {
+    padding-left : 18px;
+    font-size    : 24px;
+    line-height  : 28px;
+    font-weight  : normal;
+    color        : #292929;
+  }
+  
+  & span:not(:last-child) {
+    margin-bottom : 28px;
+  }
+  
+  & .highlight {
+    font-weight : bold;
+  }
+}

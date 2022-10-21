@@ -1,0 +1,253 @@
+@import 'src/styles/common';
+
+.root {
+  padding        : 40px 25px 25px;
+  display        : flex;
+  box-sizing     : border-box;
+  width          : 100%;
+  height         : 100%;
+  flex-direction : column;
+  background     : #FFFFFF;
+  
+  .upper_block {
+    display         : flex;
+    width           : 100%;
+    flex-direction  : column;
+    justify-content : stretch;
+    align-items     : flex-start;
+    flex-grow       : 1;
+  }
+  
+  .bottom_block {
+    display         : flex;
+    width           : 100%;
+    flex-direction  : column;
+    justify-content : stretch;
+    align-items     : flex-end;
+    flex-grow       : 0;
+  }
+}
+
+.row {
+  position        : relative;
+  margin-bottom   : 24px;
+  display         : flex;
+  width           : 100%;
+  flex-direction  : row;
+  flex-wrap       : nowrap;
+  justify-content : space-between;
+  align-items     : center;
+}
+
+.carriageClass {
+  min-width   : 70px;
+  flex-grow   : 0;
+  font-size   : 16px;
+  line-height : 19px;
+  font-weight : normal;
+  
+  font-style  : normal;
+  color       : #3E3C41;
+}
+
+.ticketsAmount {
+  margin-right : 15px;
+  margin-left  : 15px;
+  min-width    : 25px;
+  flex-grow    : 0;
+  font-size    : 16px;
+  line-height  : 19px;
+  font-weight  : 400;
+  font-style   : normal;
+  
+  text-align   : end;
+  color        : #FFA800;
+}
+
+.ticketsPrice {
+  margin-right    : 5px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  
+  align-items     : center;
+  flex-grow       : 1;
+  font-size       : 24px;
+  line-height     : 28px;
+  font-weight     : bold;
+  font-style      : normal;
+  color           : #2D2B2F;
+  
+  span {
+    flex-grow   : 0;
+    font-size   : 16px;
+    line-height : 19px;
+    font-weight : normal;
+    font-style  : normal;
+    color       : #928F94;
+  }
+}
+
+.moneySymbol {
+  margin-bottom : 2px;
+  width         : 16px;
+  height        : 19px;
+  flex-grow     : 0;
+  color         : #928F94;
+}
+
+.btn {
+  width         : 228px;
+  height        : 39px;
+  
+  font-size     : 24px;
+  line-height   : 28px;
+  font-weight   : bold;
+  font-style    : normal;
+  text-align    : center;
+  color         : #FFFFFF;
+  background    : #FFA800;
+  
+  border        : 0;
+  border-radius : 5px;
+  
+  &:hover {
+    color         : #FFFFFF;
+    background    : #FFA800;
+    
+    border        : 0;
+    border-radius : 5px;;
+    filter        : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  &:active, &:focus {
+    box-sizing    : border-box;
+    color         : #FFA800;
+    background    : #FFFFFF;
+    border        : 1px solid #FFA800;
+    border-radius : 5px;
+  }
+}
+
+.btn_summary {
+  box-sizing       : border-box;
+  width            : 180px;
+  height           : 39px;
+  font-size        : 24px;
+  line-height      : 28px;
+  font-weight      : 700;
+  font-style       : normal;
+  text-align       : center;
+  
+  color            : #292929;
+  background-color : transparent;
+  border           : 1px solid #292929;
+  border-radius    : 5px;
+  
+  &:hover, &:focus {
+    color            : #FFA800;
+    background-color : #FFFFFF;
+    border           : 1px solid #292929;
+    filter           : drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  &:active {
+    color            : #292929;
+    background-color : #FFA800;
+    border           : 1px solid #FFA800;
+    
+  }
+  
+  &:disabled {
+    color            : #FFFFFF;
+    background-color : #928F94;
+    border           : #928F94;
+    
+    &:hover {
+      color            : #FFFFFF;
+      background-color : #928F94;
+      border           : #928F94;
+      filter           : none;
+    }
+  }
+}
+
+.tooltip {
+  box-sizing    : border-box;
+  width         : 276px;
+  background    : #F5F4F6;
+  border-radius : 5px;
+  box-shadow    : 0 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.tooltip__container {
+  position       : relative;
+  display        : flex;
+  flex-direction : column;
+  
+  //&::before {
+  //  position      : absolute;
+  //  top           : -27px;
+  //  left          : calc(50% - 10px);
+  //  content       : '';
+  //  border        : 10px solid transparent;
+  //  border-bottom : 10px solid #C4C4C4;
+  //}
+  
+  &::after {
+    position      : absolute;
+    top           : -26px;
+    left          : calc(50% - 10px);
+    content       : '';
+    border        : 10px solid transparent;
+    border-bottom : 10px solid #F5F4F6;
+    
+  }
+  
+  .tooltip__row {
+    display         : flex;
+    width           : 100%;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+    
+    &:not(:last-child) {
+      margin-bottom : 7px;
+      
+    }
+    
+    .tooltip__txt {
+      margin-left : 15px;
+      flex-grow   : 1;
+      font-size   : 16px;
+      line-height : 19px;
+      font-weight : normal;
+      font-style  : normal;
+      color       : #000000;
+      
+    }
+    
+    .tooltip__price {
+      flex-grow   : 0;
+      font-size   : 24px;
+      line-height : 28px;
+      font-weight : bold;
+      font-style  : normal;
+      
+      color       : #2D2B2F;
+      
+    }
+    
+    .tooltip__rub {
+      margin-top  : -2px;
+      margin-left : 5px;
+      width       : 16px;
+      height      : 19px;
+      flex-grow   : 0;
+      color       : #928F94;
+    }
+  }
+  
+}
+

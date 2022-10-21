@@ -1,0 +1,71 @@
+@import '../../../styles/common';
+
+.root {
+  //margin          : 90px 0;
+  display         : flex;
+  min-width       : 960px;
+  flex-direction  : column;
+  justify-content : space-between;
+  align-items     : flex-start;
+}
+
+.header {
+  margin-top      : -5px;
+  display         : flex;
+  min-width       : 100%;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center;
+  font-size       : 18px;
+  line-height     : 21px;
+  font-weight     : normal;
+  font-style      : normal;
+  color           : #928F94;
+  
+  & div {
+    display        : flex;
+    flex-direction : row;
+    align-items    : baseline;
+  }
+}
+
+.trainList {
+  display         : flex;
+  width           : 100%;
+  flex-direction  : column;
+  justify-content : flex-start;
+  
+  align-items     : stretch;
+}
+
+.pagination {
+  margin-top      : 140px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : flex-end;
+  width : 100%;
+}
+
+// LEGACY
+
+.pricePickerLabels {
+  display         : flex;
+  width           : 100%;
+  flex-direction  : row;
+  justify-content : space-between;
+  
+  span {
+    font-size   : 18px;
+    line-height : 21px;
+    font-weight : normal;
+    color       : #FFFFFF;
+    
+    &:first-child {
+      margin-left : 5px;
+    }
+    
+    &:last-child {
+      margin-right : 5px;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import 'src/styles/common';
+
+.root {
+  position        : relative;
+  display         : flex;
+  box-sizing      : border-box;
+  min-width       : 956px;
+  max-width       : 958px;
+  min-height      : 158px;
+  flex-direction  : column;
+  justify-content : flex-start;
+  
+  background      : #FFFFFF;
+  border          : 1px solid #C4C4C4;
+  box-shadow      : 0 2px 2px rgba(0, 0, 0, 0.25);
+  
+  .schemeImg {
+    position : absolute;
+    z-index  : 1;
+    top      : 0;
+    right    : 0;
+    bottom   : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+    
+  }
+  
+  & .schemeLayout {
+    position              : absolute;
+    z-index               : 2;
+    top                   : 0;
+    right                 : 0;
+    bottom                : 0;
+    left                  : 0;
+    display               : grid;
+    width                 : 100%;
+    height                : 100%;
+    background-color      : transparent;
+    grid-template-columns : 42px 32px 64px 1fr 78px;
+    grid-template-rows    : 30px 1fr 9px;
+    grid-template-areas   :
+      '. carriageNumber . . .'
+      '. . . scheme .'
+      '. . . . .';
+    
+    & .carriageNumber {
+      display          : flex;
+      height           : 24px;
+      justify-content  : center;
+      align-items      : center;
+      font-size        : 12px;
+      line-height      : 16px;
+      color            : #FFFFFF;
+      background-color : black;
+      grid-area        : carriageNumber;
+    }
+    
+    & .scheme {
+      grid-area : scheme;
+    }
+  }
+}
+
+.first {
+  display               : grid;
+  grid-template-columns : repeat(16, 46px);
+  grid-template-rows    : 35px 34px 25px 25px;
+  grid-template-areas   :
+    '. . . . . . . . . . . . . . . .'
+    'seat1 seat2 seat3 seat4 seat5 seat6 seat7 seat8 seat9 seat10 seat11 seat12 seat13 seat14 seat15 seat16'
+    '. . . . . . . . . . . . . . . .'
+    '. . . . . . . . . . . . . . . .';
+  
+}
+
+.second {
+  display               : grid;
+  grid-template-columns : repeat(16, 46px);
+  grid-template-rows    : 35px 34px 25px 25px;
+  grid-template-areas   :
+    'seat2 seat4 seat6 seat8 seat10 seat12 seat14 seat16 seat18 seat20 seat22 seat24 seat26 seat28 seat30 seat32'
+    'seat1 seat3 seat5 seat7 seat9 seat11 seat13 seat15 seat17 seat19 seat21 seat23 seat25 seat27 seat29 seat31'
+    '. . . . . . . . . . . . . . . .'
+    '. . . . . . . . . . . . . . . .';
+  
+}
+
+.third {
+  display               : grid;
+  grid-template-columns : repeat(16, 46px);
+  grid-template-rows    : 35px 34px 25px 25px;
+  grid-template-areas   :
+    'seat2 seat4 seat6 seat8 seat10 seat12 seat14 seat16 seat18 seat20 seat22 seat24 seat26 seat28 seat30 seat32'
+    'seat1 seat3 seat5 seat7 seat9 seat11 seat13 seat15 seat17 seat19 seat21 seat23 seat25 seat27 seat29 seat31'
+    '. . . . . . . . . . . . . . . .'
+    'seat33 seat34 seat35 seat36 seat37 seat38 seat39 seat40 seat41 seat42 seat43 seat44 seat45 seat46 seat47 seat48';
+  
+}
+
+.fourth {
+  padding               : 7px 10px;
+  display               : grid;
+  grid-template-columns : repeat(16, 27px);
+  grid-template-rows    : repeat(5, 19px);
+  column-gap            : 19px;
+  row-gap               : 3px;
+  grid-template-areas   :
+    'seat2 seat4 seat6 seat8 seat10 seat12 seat14 seat16 seat18 seat20 seat22 seat24 seat26 seat28 seat30 seat32'
+    'seat1 seat3 seat5 seat7 seat9 seat11 seat13 seat15 seat17 seat19 seat21 seat23 seat25 seat27 seat29 seat31'
+    '. . . . . . . . . . . . . . . .'
+    '     . seat34 seat36 seat38 seat40 seat42 seat44 seat46 seat48 seat50 seat52 seat54 seat56 seat58 seat60 .'
+    'seat33 seat35 seat37 seat39 seat41 seat43 seat45 seat47 seat49 seat51 seat53 seat55 seat57 seat59 seat61 seat62';
+  
+}
+
+.seat {
+  display          : flex;
+  box-sizing       : border-box;
+  justify-content  : center;
+  align-items      : center;
+  font-size        : 16px;
+  font-weight      : 600;
+  background-color : #F3F3F3;
+  border           : 0;
+  cursor           : pointer;
+  
+  &.selected {
+    border : 2px solid #FFA800;
+  }
+  
+  &:disabled {
+    background : #c4c4c4;
+    cursor     : not-allowed;
+  }
+  
+}

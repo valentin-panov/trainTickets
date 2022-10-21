@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+@import '~antd/dist/antd.css';
+#root {
+  margin: 0 auto;
+  min-height: 100%;
+  font: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #727e86;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.alert-hidden {
+  opacity: 0;
+  transition: all 250ms linear 2s;
+  /* the last value defines transition-delay */
+}
+
+.shadow {
+  -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.root {
+  margin-top: 50px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: row;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.general {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  flex-grow: 0;
+  background: #E4E0E9;
+}
+.general .icon {
+  padding: 58px 68px 17px 43px;
+}
+.general .general__txt {
+  padding: 0 0 30px 25px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  font-style: normal;
+  color: #292929;
+}
+.general .general__txt .textContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.general .general__txt .trainId {
+  padding: 0 48px 15px 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  color: #3E3C41;
+}
+
+.params {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.params .params__schedule {
+  padding: 55px 40px;
+  min-width: 480px;
+}
+.params .params__schedule .row {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #000000;
+}
+.params .params__schedule .row .col1 {
+  min-width: 160px;
+  max-width: 160px;
+  flex-grow: 0;
+}
+.params .params__schedule .row .col2 {
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+.params .params__schedule .row .time {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  font-style: normal;
+}
+.params .params__schedule .row .city {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 0;
+}
+.params .params__schedule .row .station {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 0;
+  color: #928F94;
+}
+.params .params__schedule .row .duration {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: #C4C4C4;
+}
+.params .seats {
+  min-width: 280px;
+  border-left: 1px dashed #E5E5E5;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: #928F94;
+}
+
+.active {
+  color: #000000;
+}
+
+/*# sourceMappingURL=TrainCard.module.css.map */
