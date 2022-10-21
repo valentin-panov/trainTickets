@@ -52,7 +52,7 @@ export const PassengerCards = memo<Props>(({ className }) => {
       >
         {order.departure.seats.map((el, index) => (
           <Panel
-            key={`key${el.coach_id}${el.seat_number}`}
+            key={index.toString()}
             className={s.panel}
             header={
               <button
