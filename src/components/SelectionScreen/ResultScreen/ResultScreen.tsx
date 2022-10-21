@@ -6,7 +6,7 @@ import { CascaderValueType, SortFilter } from './SortFilter';
 import { ResultsLimit } from './ResultsLimit';
 import { TrainCard } from './TrainCard';
 import { PaginationOrigin } from '../PaginationOrigin';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import ZeroFound from '../../ZeroFound/ZeroFound';
 import { ISortOptions } from '../../../interfaces/Interfaces';
 import { searchParamsLimitSet, searchParamsOffsetSet, searchParamsSortSet } from '../../../reducers/searchParams';

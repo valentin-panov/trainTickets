@@ -95,6 +95,8 @@
           ".jsx"
         ]
       }
-    ]
+    ],
+    "react/function-component-definition": 0,
+    "react/no-unstable-nested-components": 0
   }
 }

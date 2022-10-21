@@ -14,7 +14,7 @@ import {
   appStateSetTrainOutbound,
 } from '../../../../../reducers/appState';
 import { orderReset } from '../../../../../reducers/order';
-import {AppDispatch} from "../../../../../store";
+import { AppDispatch } from '../../../../../store';
 
 export type Props = {
   className?: string;

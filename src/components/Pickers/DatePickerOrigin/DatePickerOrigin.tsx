@@ -4,7 +4,7 @@ import moment from 'moment';
 import { useDispatch, useSelector } from 'react-redux';
 import s from './DatePickerOrigin.module.scss';
 import { DatePickerOriginUnit, DateType } from './DatePickerOriginUnit';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import { searchParamsDateOutboundSet, searchParamsDateReturnSet } from '../../../reducers/searchParams';
 
 export type Props = {

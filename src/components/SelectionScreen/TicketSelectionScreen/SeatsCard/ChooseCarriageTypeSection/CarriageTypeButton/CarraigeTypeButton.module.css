@@ -1,94 +1,98 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext');
 @import '~antd/dist/antd.css';
+
 #root {
-  margin: 0 auto;
-  min-height: 100%;
-  font: inherit;
+    font: inherit;
+    min-height: 100%;
+    margin: 0 auto;
 }
 
 html,
 body {
-  box-sizing: border-box;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 a {
-  color: #727e86;
+    color: #727e86;
 }
 
 a,
 a:hover,
 a:visited,
 a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .invisible {
-  opacity: 0;
+    opacity: 0;
 }
 
 .text-center {
-  align-self: center;
+    align-self: center;
 }
 
 .alert-hidden {
-  opacity: 0;
-  transition: all 250ms linear 2s;
-  /* the last value defines transition-delay */
+    transition: all 250ms linear 2s;
+    opacity: 0;
+    /* the last value defines transition-delay */
 }
 
 .shadow {
-  -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
-  -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
-  box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .carriageTypeIcon {
-  margin-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: #C4C4C4;
-  background: transparent;
-  border: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #c4c4c4;
+    border: 0;
+    background: transparent;
 }
+
 .carriageTypeIcon:hover {
-  color: #FFA800;
-  border: 1px solid #FFA800;
-  border-radius: 30px;
-  cursor: pointer;
+    cursor: pointer;
+    color: #ffa800;
+    border: 1px solid #ffa800;
+    border-radius: 30px;
 }
+
 .carriageTypeIcon:disabled {
-  color: #C4C4C4;
-  border: 0;
-  cursor: not-allowed;
+    cursor: not-allowed;
+    color: #c4c4c4;
+    border: 0;
 }
+
 .carriageTypeIcon .carriageTypeSubtitle {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .active {
-  color: #FFA800;
+    color: #ffa800;
 }
 
 /*# sourceMappingURL=CarraigeTypeButton.module.css.map */

@@ -1,53 +1,52 @@
 @import 'src/styles/common';
 
 .root {
-  width : 320px;
+  width: 320px;
 }
 
 .header {
-  display         : flex;
-  flex-direction  : row;
-  justify-content : space-between;
-  align-items     : center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .icon {
-  width  : 32px;
-  height : 26px;
+  width: 32px;
+  height: 26px;
 }
 
 .sideSelection__title {
-  margin-left : 12px;
-  flex-grow   : 1;
-  font-size   : 30px;
-  line-height : 35px;
-  font-weight : bold;
-  color       : #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
+  flex-grow: 1;
+  margin-left: 12px;
+  color: #ffffff;
 }
 
 .timePickerPanel {
-  position       : relative;
-  padding-left   : 10px;
-  display        : flex;
-  width          : 290px;
-  flex-direction : column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  padding-left: 10px;
 }
 
 .timePickerSubTitle {
-  font-size   : 24px;
-  line-height : 28px;
-  font-weight : normal;
-  font-style  : normal;
-  
-  color       : #E5E5E5;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+
+  color: #e5e5e5;
 }
 
 .firstST {
-  align-self : flex-start;
-  
+  align-self: flex-start;
 }
 
 .secondST {
-  margin-top : 45px;
-  align-self : flex-end;
+  align-self: flex-end;
+  margin-top: 45px;
 }

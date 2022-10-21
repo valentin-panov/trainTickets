@@ -6,7 +6,7 @@ import s from './DestinationPicker.module.scss';
 import { ReactComponent as SwapBtn } from '../../../svg/swapBtn.svg';
 
 import { DestinationPickerUnit, Point } from './DestinationPickerUnit';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import { ICity } from '../../../interfaces/Interfaces';
 import { searchParamsCityArrivalSet, searchParamsCityDepartureSet } from '../../../reducers/searchParams';
 

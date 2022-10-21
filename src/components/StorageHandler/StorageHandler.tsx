@@ -1,6 +1,6 @@
 import { memo, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {AppDispatch, RootState} from 'store';
+import { AppDispatch, RootState } from 'store';
 import { storageHandlerAdapter } from 'packages/storage/adapters/StorageHandlerAdapter';
 import { setToken } from '../../reducers/token';
 

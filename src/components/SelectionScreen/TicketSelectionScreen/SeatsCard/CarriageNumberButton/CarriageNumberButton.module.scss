@@ -1,23 +1,22 @@
 @import 'src/styles/common';
 
 .carriageNumber {
-  font-size        : 24px;
-  line-height      : 28px;
-  font-weight      : 700;
-  font-style       : normal;
-  
-  color            : #2D2B2F;
-  background-color : transparent;
-  border           : 0;
-  
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+
+  color: #2d2b2f;
+  border: 0;
+  background-color: transparent;
+
   &:hover {
-    color  : #FFA800;
-    cursor : pointer;
+    cursor: pointer;
+    color: #ffa800;
   }
-  
+
   &:disabled {
-    color  : #FFFFFF;
-    cursor : default;
+    cursor: default;
+    color: #ffffff;
   }
-  
 }

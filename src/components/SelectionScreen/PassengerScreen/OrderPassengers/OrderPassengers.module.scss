@@ -1,68 +1,67 @@
 @import 'src/styles/common';
 
 .root {
-  width : 320px;
-  
+  width: 320px;
 }
 
 .header {
-  display         : flex;
-  flex-direction  : row;
-  justify-content : space-between;
-  align-items     : center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .icon {
-  width  : 32px;
-  height : 26px;
-  color  : #FFA800;
+  width: 32px;
+  height: 26px;
+  color: #ffa800;
 }
 
 .sideSelection__title {
-  margin-left : 12px;
-  flex-grow   : 1;
-  font-size   : 30px;
-  line-height : 35px;
-  font-weight : bold;
-  color       : #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
+  flex-grow: 1;
+  margin-left: 12px;
+  color: #ffffff;
 }
 
 .timePickerPanel {
-  position       : relative;
-  padding-left   : 10px;
-  display        : flex;
-  width          : 290px;
-  flex-direction : column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  padding-left: 10px;
 }
 
 .timePickerSubTitle {
-  display               : grid;
-  font-size             : 24px;
-  line-height           : 28px;
-  font-weight           : normal;
-  font-style            : normal;
-  color                 : #E5E5E5;
-  grid-template-rows    : min-content;
-  grid-template-columns : 140px min-content 1fr min-content;
-  gap                   : 10px;
-  
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+  display: grid;
+  color: #e5e5e5;
+  grid-template-rows: min-content;
+  grid-template-columns: 140px min-content 1fr min-content;
+  gap: 10px;
+
   .title {
-    margin : inherit;
+    margin: inherit;
   }
-  
+
   .price {
-    font-size   : 24px;
-    line-height : 28px;
-    font-weight : 700;
-    font-style  : normal;
-    text-align  : right;
-    
-    color       : #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    text-align: right;
+
+    color: #ffffff;
   }
-  
+
   .currency {
-    width  : 14px;
-    height : 17px;
-    color  : #928F94;
+    width: 14px;
+    height: 17px;
+    color: #928f94;
   }
 }

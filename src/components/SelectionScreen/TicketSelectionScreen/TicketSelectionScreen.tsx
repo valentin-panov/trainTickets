@@ -3,7 +3,7 @@ import cn from 'clsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from 'antd';
 import s from './TicketSelectionScreen.module.scss';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import { SeatsCard } from './SeatsCard';
 import { trainSeatsFetchData } from '../../../reducers/getSeats';
 import { appStateSetProgress } from '../../../reducers/appState';

@@ -7,7 +7,7 @@ import s from './PersonalData.module.scss';
 import { orderSetPD } from '../../../reducers/order';
 import { appStateSetProgress } from '../../../reducers/appState';
 import { IPersonalData } from '../../../interfaces/Interfaces';
-import {AppDispatch} from "../../../store";
+import { AppDispatch } from '../../../store';
 
 export const PersonalData = memo(() => {
   const dispatch = useDispatch<AppDispatch>();

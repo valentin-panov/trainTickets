@@ -1,9 +1,10 @@
+/* eslint-disable react/no-array-index-key */
 import React, { memo, useEffect, useRef, useState } from 'react';
 import cn from 'clsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button, Collapse } from 'antd';
 import s from './PassengerCards.module.scss';
-import {AppDispatch, RootState} from '../../../../store';
+import { AppDispatch, RootState } from '../../../../store';
 import { PassengerCard } from './PassengerCard';
 import { ReactComponent as Minus } from '../../../../svg/passCardMinus.svg';
 import { ReactComponent as Plus } from '../../../../svg/passCardPlus.svg';

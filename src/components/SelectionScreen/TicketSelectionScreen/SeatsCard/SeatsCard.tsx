@@ -17,7 +17,7 @@ import { CarriageNumberButton } from './CarriageNumberButton';
 import { trainSeatsReset } from '../../../../reducers/getSeats';
 import { TrainData } from './TrainData';
 import { TicketsCount } from './TicketsCount';
-import {AppDispatch, RootState} from '../../../../store';
+import { AppDispatch, RootState } from '../../../../store';
 import { ChooseCarriageTypeSection } from './ChooseCarriageTypeSection';
 import { ServicesBlock } from './ServicesBlock';
 import { selectedSeatsSet } from '../../../../reducers/selectedSeats';
@@ -261,7 +261,7 @@ export const SeatsCard = memo<Props>(({ className, type, data }) => {
                       <div>
                         Места <span className={s.seatsCount}>{activeCarriage.seats.length}</span>
                       </div>
-                      {carriageType === 'first' && <></>}
+                      {carriageType === 'first' && <> </>}
                       {carriageType === 'second' && (
                         <>
                           <div className={s.seatsType}>
@@ -290,7 +290,7 @@ export const SeatsCard = memo<Props>(({ className, type, data }) => {
                           </div>
                         </>
                       )}
-                      {carriageType === 'fourth' && <></>}
+                      {carriageType === 'fourth' && <> </>}
                     </div>
                     <div>
                       <div>Стоимость</div>
@@ -356,12 +356,10 @@ export const SeatsCard = memo<Props>(({ className, type, data }) => {
           </div>
 
           {totalPrice !== 0 && (
-            <>
-              <div className={s.totalPrice}>
-                <div className={s.totalPriceNumbers}>{getBeautifulNumber(totalPrice)}</div>
-                <div className={s.totalPriceSymbol}>{iconsCollection.rub}</div>
-              </div>
-            </>
+            <div className={s.totalPrice}>
+              <div className={s.totalPriceNumbers}>{getBeautifulNumber(totalPrice)}</div>
+              <div className={s.totalPriceSymbol}>{iconsCollection.rub}</div>
+            </div>
           )}
         </>
       )}

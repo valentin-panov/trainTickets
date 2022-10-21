@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import s from './SummaryPassengers.module.scss';
 import { IOrderSeat } from '../../../../interfaces/Interfaces';
-import {AppDispatch, RootState} from '../../../../store';
+import { AppDispatch, RootState } from '../../../../store';
 import { appStateSetProgress } from '../../../../reducers/appState';
 import { orderReset } from '../../../../reducers/order';
 import { SummaryPassengerCard } from './SummaryPassengerCard';

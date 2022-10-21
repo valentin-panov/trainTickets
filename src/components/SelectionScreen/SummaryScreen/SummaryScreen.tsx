@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import s from './SummaryScreen.module.scss';
 import { TrainCard } from '../ResultScreen/TrainCard';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import { SummaryPassengers } from './SummaryPassengers';
 import { SummaryPayment } from './SummaryPayment';
 import { asyncPostOrder } from '../../../reducers/order';

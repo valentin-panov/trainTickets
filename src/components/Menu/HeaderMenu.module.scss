@@ -1,34 +1,34 @@
 @import 'src/styles/common';
 
 .root {
-  margin     : 0;
-  padding    : 25px 258px;
-  box-sizing : border-box;
-  min-width  : 100%;
-  min-height : 94px;
-  background : $logo-bg;
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 94px;
+  margin: 0;
+  padding: 25px 258px;
+  background: $logo-bg;
 }
 
 .navBar {
-  display         : flex;
-  width           : 100%;
-  height          : 100%;
-  flex-direction  : row;
-  justify-content : flex-start;
-  align-items     : center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
 }
 
 .navLink {
-  margin-right : 82px;
-  padding      : 0;
-  font-size    : 30px;
-  line-height  : 35px;
-  font-weight  : 300;
-  font-style   : normal;
-  color        : rgba(255, 255, 255, 1);
-  
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 35px;
+  margin-right: 82px;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+
   &:hover {
-    color : #FFA800;
+    color: #ffa800;
   }
 }
 

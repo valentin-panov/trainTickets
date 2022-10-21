@@ -1,9 +1,9 @@
 {
-  "name": "fe-diploma",
+  "name": "trainBooking",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "homepage": "https://valentin-panov.github.io/fe-dev-diplom/",
+  "homepage": "https://valentin-panov.github.io/trainBooking/",
   "sideEffects": [
     "**/*.scss"
   ],
@@ -67,7 +67,7 @@
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
-    "eslint": "^8.25.0",
+    "eslint": "8.22.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-node": "^4.1.0",

@@ -5,7 +5,7 @@ import { Slider } from 'antd';
 import s from './SelectionFilterPrice.module.scss';
 import './rewrite.css';
 import { searchParamsFiltersSet } from '../../../reducers/searchParams';
-import {AppDispatch} from "../../../store";
+import { AppDispatch } from '../../../store';
 
 export type Range = [number, number];
 

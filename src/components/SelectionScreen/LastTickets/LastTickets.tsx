@@ -3,7 +3,7 @@ import cn from 'clsx';
 import { useDispatch, useSelector } from 'react-redux';
 import s from './LastTickets.module.scss';
 import { LastTicketCard } from './LastTicketCard';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import { lastTicketsFetchData } from '../../../reducers/lastTickets';
 
 export type Props = {

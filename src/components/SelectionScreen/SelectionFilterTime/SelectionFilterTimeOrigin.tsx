@@ -2,7 +2,7 @@ import React, { memo, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Slider } from 'antd';
 import { searchParamsFiltersSet } from '../../../reducers/searchParams';
-import {AppDispatch} from "../../../store";
+import { AppDispatch } from '../../../store';
 
 export type Range = [number, number];
 

@@ -10,7 +10,7 @@ import { iconsCollection } from '../../collections/collections';
 import { ResultScreen } from './ResultScreen';
 import { Progress } from './Progress';
 import { Loading } from '../Loading';
-import {AppDispatch, RootState} from '../../store';
+import { AppDispatch, RootState } from '../../store';
 import Error404 from '../Error404/Error404';
 import { DatePickerOrigin } from '../Pickers/DatePickerOrigin';
 import { getPriceRange } from '../../utils/getPriceRange';

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { message } from 'antd';
 import { BehaviorSubject, of } from 'rxjs';
 import s from './Wrapper.module.scss';
-import {AppDispatch, RootState} from '../../store';
+import { AppDispatch, RootState } from '../../store';
 import { getRouteFetchData } from '../../reducers/getRoute';
 import { searchParamsDateReturnSet } from '../../reducers/searchParams';
 import { IFilters } from '../../interfaces/Interfaces';
@@ -15,7 +15,7 @@ export type Props = {
   children: React.ReactNode;
 };
 
-export const Wrapper = ({ className, children }: Props): ReactElement => {
+export function Wrapper({ className, children }: Props): ReactElement {
   const dispatch = useDispatch<AppDispatch>();
   const searchParams = useSelector((store: RootState) => store.searchParams);
   const { dateOutbound, dateReturn, filters } = searchParams;
@@ -58,6 +58,6 @@ export const Wrapper = ({ className, children }: Props): ReactElement => {
   }, [searchParams.sort, searchParams.offset, searchParams.limit]);
 
   return <div className={cn(s.root, className)}>{children}</div>;
-};
+}
 
 Wrapper.defaultProps = { className: '' };

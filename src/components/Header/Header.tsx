@@ -13,7 +13,7 @@ import headerMain from './img/header_main.png';
 import headerTrain from './img/header_train.png';
 import headerSuccess from './img/header_success.png';
 import { appURL } from '../../App';
-import {AppDispatch, RootState} from '../../store';
+import { AppDispatch, RootState } from '../../store';
 import { getRouteFetchData } from '../../reducers/getRoute';
 import { orderReset } from '../../reducers/order';
 import { selectedSeatsReset } from '../../reducers/selectedSeats';
@@ -110,21 +110,19 @@ export const Header = memo<Props>(({ className }) => {
         )}
 
         {activePreset.class === 'select' && (
-          <>
-            <div className={s.header__controls_select}>
-              <div className={cn(s.picker_holder_select)}>
-                <div className={s.picker_holder_select_row}>
-                  <DestinationPicker />
-                  <DatePickerOrigin pickerPlace="headerPicker" />
-                </div>
-                <div className={s.search_btn_holder_select}>
-                  <Button className={s.searchBtn} onClick={findTickets} disabled={findDisabled}>
-                    НАЙТИ БИЛЕТЫ
-                  </Button>
-                </div>
+          <div className={s.header__controls_select}>
+            <div className={cn(s.picker_holder_select)}>
+              <div className={s.picker_holder_select_row}>
+                <DestinationPicker />
+                <DatePickerOrigin pickerPlace="headerPicker" />
+              </div>
+              <div className={s.search_btn_holder_select}>
+                <Button className={s.searchBtn} onClick={findTickets} disabled={findDisabled}>
+                  НАЙТИ БИЛЕТЫ
+                </Button>
               </div>
             </div>
-          </>
+          </div>
         )}
 
         {activePreset.class === 'success' && <div className={s.success__msg}>Благодарим Вас за заказ!</div>}

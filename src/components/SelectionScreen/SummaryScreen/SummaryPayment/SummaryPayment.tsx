@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { Button } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import s from './SummaryPayment.module.scss';
-import {AppDispatch, RootState} from '../../../../store';
+import { AppDispatch, RootState } from '../../../../store';
 import { appStateSetProgress } from '../../../../reducers/appState';
 
 export const SummaryPayment = memo(() => {

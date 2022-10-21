@@ -6,7 +6,7 @@ import { ReactComponent as Circle1 } from './svg/1.svg';
 import { ReactComponent as Circle2 } from './svg/2.svg';
 import { ReactComponent as Circle3 } from './svg/3.svg';
 import { ReactComponent as Circle4 } from './svg/4.svg';
-import {AppDispatch, RootState} from '../../../store';
+import { AppDispatch, RootState } from '../../../store';
 import { appStateSetProgress } from '../../../reducers/appState';
 import { orderReset } from '../../../reducers/order';
 

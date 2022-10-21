@@ -20,7 +20,7 @@ import { ReactComponent as BtnUp } from './img/btnUp.svg';
 import { FooterTitle } from './FooterTitle';
 import { FooterSubtitle } from './FooterSubtitle';
 import { postSubscription, subscriptionSetIdle } from '../../reducers/subrcribe';
-import {AppDispatch, RootState} from '../../store';
+import { AppDispatch, RootState } from '../../store';
 import { Icon } from '../Icon';
 
 export type Props = {

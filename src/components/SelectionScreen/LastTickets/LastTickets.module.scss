@@ -1,80 +1,79 @@
 @import 'src/styles/common';
 
 .root {
-  margin          : 90px 90px 0 0;
-  display         : flex;
+  display: flex;
+  flex-direction: column;
   //min-width       : 100%;
-  flex-direction  : column;
-  justify-content : space-between;
+  justify-content: space-between;
+  margin: 90px 90px 0 0;
 }
 
 .lastTicketsTitle {
-  margin-bottom  : 30px;
-  font-size      : 30px;
-  line-height    : 35px;
-  font-weight    : 500;
-  text-transform : uppercase;
-  color          : #000000;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .sideSelection {
-  padding         : 45px 28px 35px;
-  display         : flex;
-  width           : 360px;
-  flex-direction  : column;
-  justify-content : flex-start;
-  align-items     : center;
-  background      : #3E3C41;
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 360px;
+  padding: 45px 28px 35px;
+  background: #3e3c41;
+
   .datePicker {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .sideSelection__title {
-  padding-bottom : 10px;
-  font-size      : 30px;
-  line-height    : 35px;
-  font-weight    : normal;
-  color          : #FFFFFF;
-  align-self     : flex-start;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 35px;
+  align-self: flex-start;
+  padding-bottom: 10px;
+  color: #ffffff;
 }
 
 .divider {
-  margin-top       : 30px;
-  margin-bottom    : 30px;
-  width            : 360px;
-  min-height       : 1px;
-  max-height       : 1px;
-  background-color : #E5E5E5;
+  width: 360px;
+  min-height: 1px;
+  max-height: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #e5e5e5;
 }
 
 .filterList {
-  width : 100%;
+  width: 100%;
 }
 
 .pricePickerLabels {
-  display         : flex;
-  width           : 100%;
-  flex-direction  : row;
-  justify-content : space-between;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
   span {
-    font-size   : 18px;
-    line-height : 21px;
-    font-weight : normal;
-    color       : #FFFFFF;
-    
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #ffffff;
+
     &:first-child {
-      margin-left : 5px;
+      margin-left: 5px;
     }
-    
+
     &:last-child {
-      margin-right : 5px;
+      margin-right: 5px;
     }
   }
 }

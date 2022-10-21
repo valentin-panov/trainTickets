@@ -13,24 +13,23 @@ import { SelectionScreen } from './components/SelectionScreen';
 import { Loading } from './components/Loading';
 import './App.css';
 
-export const appURL = '/fe-dev-diplom';
+export const appURL = '/trainBooking';
 export const serverURL = 'https://fe-diplom.herokuapp.com';
-
 
 function App() {
   return (
-      <Router basename={appURL}>
+    <Router basename={appURL}>
       <ScrollToTop />
       <Wrapper>
         <Header />
         <Main>
           <Routes>
-            <Route  path="/" element={<LandingPage/>} />
-            <Route  path="/select" element={<SelectionScreen/>} />
-            <Route  path="/success" element={<Success/>} />
-            <Route  path="/items/:id.html" element={<Error404/>} />
-            <Route  path="/loading" element={<Loading/>} />
-            <Route path="*" element={<Error404/>} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/select" element={<SelectionScreen />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="/items/:id.html" element={<Error404 />} />
+            <Route path="/loading" element={<Loading />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </Main>
         <Footer />
