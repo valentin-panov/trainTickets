@@ -3,67 +3,67 @@
 @import '~antd/dist/antd.css';
 
 .root {
-    font: inherit;
-    max-width: 1200px;
-    margin: 0 auto;
+  font: inherit;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 html,
 body {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    height: 100%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 a {
-    color: #727e86;
+  color: #727e86;
 }
 
 a,
 a:hover,
 a:visited,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .invisible {
-    opacity: 0;
+  opacity: 0;
 }
 
 .text-center {
-    align-self: center;
+  align-self: center;
 }
 
 .alert-hidden {
-    transition: all 250ms linear 2s;
-    opacity: 0;
-    /* the last value defines transition-delay */
+  transition: all 250ms linear 2s;
+  opacity: 0;
+  /* the last value defines transition-delay */
 }
 
 .shadow {
-    -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
-    -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
-    box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -webkit-box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 main {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 /*# sourceMappingURL=common.css.map */

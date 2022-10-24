@@ -6,11 +6,11 @@
  *   Wrapper.module.scss 1:9  root stylesheet */
 
 body::before {
-    font-family: 'Source Code Pro', 'SF Mono', Monaco, Inconsolata, 'Fira Mono', 'Droid Sans Mono', monospace, monospace;
-    display: block;
-    margin-bottom: 1em;
-    padding: 1em;
-    content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import 'src/styles/common';\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Wrapper.module.scss 1:9  root stylesheet";
-    white-space: pre;
-    border-bottom: 2px solid black;
+  font-family: 'Source Code Pro', 'SF Mono', Monaco, Inconsolata, 'Fira Mono', 'Droid Sans Mono', monospace, monospace;
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import 'src/styles/common';\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Wrapper.module.scss 1:9  root stylesheet";
+  white-space: pre;
+  border-bottom: 2px solid black;
 }
